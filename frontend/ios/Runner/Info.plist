@@ -1,0 +1,9 @@
+<key>NSCameraUsageDescription</key>
+<string>This app needs access to camera to capture food photos</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>This app needs access to photo library to select food images</string>
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+</dict>

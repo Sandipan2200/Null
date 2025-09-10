@@ -1,0 +1,8 @@
+Django==4.2.7
+djangorestframework==3.14.0
+django-cors-headers==4.3.1
+Pillow==10.1.0
+opencv-python==4.8.1.78
+tensorflow==2.15.0
+requests==2.31.0
+python-dotenv==1.0.0
