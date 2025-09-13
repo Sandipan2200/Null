@@ -1,0 +1,122 @@
+INFO 2025-09-11 17:48:56,644 autoreload 21908 23620 Watching for file changes with StatReloader
+INFO 2025-09-11 17:50:03,345 autoreload 21908 23620 D:\app\backend\food_analyzer\admin.py changed, reloading.
+INFO 2025-09-11 17:50:03,982 autoreload 33324 29196 Watching for file changes with StatReloader
+INFO 2025-09-11 17:50:37,217 autoreload 33324 29196 D:\app\backend\food_analyzer\admin.py changed, reloading.
+INFO 2025-09-11 17:50:37,955 autoreload 10936 19840 Watching for file changes with StatReloader
+INFO 2025-09-11 17:50:42,948 autoreload 31144 26752 Watching for file changes with StatReloader
+INFO 2025-09-11 17:51:54,099 autoreload 31144 26752 D:\app\backend\calorie_api\settings.py changed, reloading.
+INFO 2025-09-11 17:51:54,819 autoreload 452 6208 Watching for file changes with StatReloader
+INFO 2025-09-11 17:52:20,310 autoreload 452 6208 D:\app\backend\calorie_api\settings.py changed, reloading.
+INFO 2025-09-11 17:52:21,789 autoreload 17028 14548 Watching for file changes with StatReloader
+INFO 2025-09-11 17:52:52,528 autoreload 9268 20216 Watching for file changes with StatReloader
+WARNING 2025-09-11 17:53:06,869 log 9268 31124 Not Found: /
+WARNING 2025-09-11 17:53:06,870 basehttp 9268 31124 "GET / HTTP/1.1" 404 2480
+INFO 2025-09-11 17:53:06,956 basehttp 9268 18732 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-11 17:53:07,110 basehttp 9268 18732 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4184
+INFO 2025-09-11 17:53:07,174 enhanced_food_detector 9268 18376 Initializing Enhanced Food Detection System...
+INFO 2025-09-11 17:53:07,174 enhanced_food_detector 9268 18376 Loading ResNet50...
+INFO 2025-09-11 17:53:42,683 enhanced_food_detector 9268 18376 Loading EfficientNetB3...
+ERROR 2025-09-11 17:54:00,931 enhanced_food_detector 9268 18376 Error loading models: Shape mismatch in layer #1 (named stem_conv)for weight stem_conv/kernel. Weight expects shape (3, 3, 1, 40). Received saved weight with shape (3, 3, 3, 40)
+INFO 2025-09-11 17:54:01,905 enhanced_food_detector 9268 18376 Fallback: Using only ResNet50
+INFO 2025-09-11 17:54:04,676 views 9268 18376 Detected: Unknown Food Item with confidence: 0.00%
+INFO 2025-09-11 17:54:04,679 enhanced_nutrition_api 9268 18376 Searching comprehensive nutrition data for: Unknown Food Item
+ERROR 2025-09-11 17:54:06,340 enhanced_nutrition_api 9268 18376 USDA API error: 403
+WARNING 2025-09-11 17:54:08,804 enhanced_nutrition_api 9268 18376 No nutrition data found for: Unknown Food Item
+INFO 2025-09-11 17:54:08,805 views 9268 18376 Retrieved nutrition data from: default_fallback
+INFO 2025-09-11 17:54:08,852 basehttp 9268 18376 "POST /api/v1/analyze/ HTTP/1.1" 200 915
+INFO 2025-09-11 18:07:46,310 autoreload 11128 12388 Watching for file changes with StatReloader
+INFO 2025-09-11 18:08:28,572 basehttp 11128 21856 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-11 18:08:28,913 basehttp 11128 21856 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4184
+INFO 2025-09-11 18:08:29,378 enhanced_food_detector 11128 15648 Initializing Enhanced Food Detection System...
+INFO 2025-09-11 18:08:29,378 enhanced_food_detector 11128 15648 Loading ResNet50...
+INFO 2025-09-11 18:08:31,212 enhanced_food_detector 11128 15648 Loading EfficientNetB3...
+ERROR 2025-09-11 18:08:33,599 enhanced_food_detector 11128 15648 Error loading models: Shape mismatch in layer #1 (named stem_conv)for weight stem_conv/kernel. Weight expects shape (3, 3, 1, 40). Received saved weight with shape (3, 3, 3, 40)
+INFO 2025-09-11 18:08:34,993 enhanced_food_detector 11128 15648 Fallback: Using only ResNet50
+INFO 2025-09-11 18:08:37,679 views 11128 15648 Detected: Broccoli with confidence: 10.72%
+INFO 2025-09-11 18:08:37,682 enhanced_nutrition_api 11128 15648 Searching comprehensive nutrition data for: Broccoli
+ERROR 2025-09-11 18:08:39,339 enhanced_nutrition_api 11128 15648 USDA API error: 403
+INFO 2025-09-11 18:08:41,250 enhanced_nutrition_api 11128 15648 Found nutrition data from OpenFoodFacts
+INFO 2025-09-11 18:08:41,250 views 11128 15648 Retrieved nutrition data from: openfoodfacts
+INFO 2025-09-11 18:08:41,285 basehttp 11128 15648 "POST /api/v1/analyze/ HTTP/1.1" 200 916
+INFO 2025-09-11 18:11:41,292 basehttp 11128 15212 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-11 18:11:41,308 basehttp 11128 15212 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4184
+INFO 2025-09-11 18:11:41,369 enhanced_food_detector 11128 30640 Initializing Enhanced Food Detection System...
+INFO 2025-09-11 18:11:41,370 enhanced_food_detector 11128 30640 Loading ResNet50...
+INFO 2025-09-11 18:11:42,695 enhanced_food_detector 11128 30640 Loading EfficientNetB3...
+ERROR 2025-09-11 18:11:44,405 enhanced_food_detector 11128 30640 Error loading models: Shape mismatch in layer #1 (named stem_conv)for weight stem_conv/kernel. Weight expects shape (3, 3, 1, 40). Received saved weight with shape (3, 3, 3, 40)
+INFO 2025-09-11 18:11:45,737 enhanced_food_detector 11128 30640 Fallback: Using only ResNet50
+INFO 2025-09-11 18:11:48,693 views 11128 30640 Detected: Eggnog with confidence: 11.08%
+INFO 2025-09-11 18:11:48,695 enhanced_nutrition_api 11128 30640 Searching comprehensive nutrition data for: Eggnog
+ERROR 2025-09-11 18:11:50,672 enhanced_nutrition_api 11128 30640 USDA API error: 403
+INFO 2025-09-11 18:11:52,623 enhanced_nutrition_api 11128 30640 Found nutrition data from OpenFoodFacts
+INFO 2025-09-11 18:11:52,624 views 11128 30640 Retrieved nutrition data from: openfoodfacts
+INFO 2025-09-11 18:11:52,670 basehttp 11128 30640 "POST /api/v1/analyze/ HTTP/1.1" 200 894
+INFO 2025-09-11 18:12:58,849 basehttp 11128 5784 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-11 18:12:58,863 basehttp 11128 5784 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4184
+INFO 2025-09-11 18:12:58,897 enhanced_food_detector 11128 18948 Initializing Enhanced Food Detection System...
+INFO 2025-09-11 18:12:58,898 enhanced_food_detector 11128 18948 Loading ResNet50...
+INFO 2025-09-11 18:13:00,165 enhanced_food_detector 11128 18948 Loading EfficientNetB3...
+ERROR 2025-09-11 18:13:01,563 enhanced_food_detector 11128 18948 Error loading models: Shape mismatch in layer #1 (named stem_conv)for weight stem_conv/kernel. Weight expects shape (3, 3, 1, 40). Received saved weight with shape (3, 3, 3, 40)
+INFO 2025-09-11 18:13:02,956 enhanced_food_detector 11128 18948 Fallback: Using only ResNet50
+INFO 2025-09-11 18:13:06,029 views 11128 18948 Detected: Eggnog with confidence: 11.08%
+INFO 2025-09-11 18:13:06,031 enhanced_nutrition_api 11128 18948 Searching comprehensive nutrition data for: Eggnog
+ERROR 2025-09-11 18:13:07,926 enhanced_nutrition_api 11128 18948 USDA API error: 403
+INFO 2025-09-11 18:13:09,823 enhanced_nutrition_api 11128 18948 Found nutrition data from OpenFoodFacts
+INFO 2025-09-11 18:13:09,823 views 11128 18948 Retrieved nutrition data from: openfoodfacts
+INFO 2025-09-11 18:13:09,859 basehttp 11128 18948 "POST /api/v1/analyze/ HTTP/1.1" 200 902
+INFO 2025-09-11 18:14:06,769 basehttp 11128 12008 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-11 18:14:06,804 basehttp 11128 12008 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4184
+INFO 2025-09-11 18:14:06,842 enhanced_food_detector 11128 8996 Initializing Enhanced Food Detection System...
+INFO 2025-09-11 18:14:06,843 enhanced_food_detector 11128 8996 Loading ResNet50...
+INFO 2025-09-11 18:14:07,928 enhanced_food_detector 11128 8996 Loading EfficientNetB3...
+ERROR 2025-09-11 18:14:09,142 enhanced_food_detector 11128 8996 Error loading models: Shape mismatch in layer #1 (named stem_conv)for weight stem_conv/kernel. Weight expects shape (3, 3, 1, 40). Received saved weight with shape (3, 3, 3, 40)
+INFO 2025-09-11 18:14:10,407 enhanced_food_detector 11128 8996 Fallback: Using only ResNet50
+INFO 2025-09-11 18:14:12,685 views 11128 8996 Detected: Eggnog with confidence: 11.08%
+INFO 2025-09-11 18:14:12,687 enhanced_nutrition_api 11128 8996 Searching comprehensive nutrition data for: Eggnog
+ERROR 2025-09-11 18:14:14,526 enhanced_nutrition_api 11128 8996 USDA API error: 403
+INFO 2025-09-11 18:14:16,269 enhanced_nutrition_api 11128 8996 Found nutrition data from OpenFoodFacts
+INFO 2025-09-11 18:14:16,269 views 11128 8996 Retrieved nutrition data from: openfoodfacts
+INFO 2025-09-11 18:14:16,298 basehttp 11128 8996 "POST /api/v1/analyze/ HTTP/1.1" 200 900
+INFO 2025-09-11 18:15:58,406 basehttp 11128 28344 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-11 18:15:58,529 basehttp 11128 28344 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4184
+INFO 2025-09-11 18:15:58,710 enhanced_food_detector 11128 17688 Initializing Enhanced Food Detection System...
+INFO 2025-09-11 18:15:58,711 enhanced_food_detector 11128 17688 Loading ResNet50...
+INFO 2025-09-11 18:16:00,410 enhanced_food_detector 11128 17688 Loading EfficientNetB3...
+ERROR 2025-09-11 18:16:01,955 enhanced_food_detector 11128 17688 Error loading models: Shape mismatch in layer #1 (named stem_conv)for weight stem_conv/kernel. Weight expects shape (3, 3, 1, 40). Received saved weight with shape (3, 3, 3, 40)
+INFO 2025-09-11 18:16:03,328 enhanced_food_detector 11128 17688 Fallback: Using only ResNet50
+INFO 2025-09-11 18:16:07,326 views 11128 17688 Detected: Eggnog with confidence: 11.08%
+INFO 2025-09-11 18:16:07,328 enhanced_nutrition_api 11128 17688 Searching comprehensive nutrition data for: Eggnog
+ERROR 2025-09-11 18:16:09,399 enhanced_nutrition_api 11128 17688 USDA API error: 403
+INFO 2025-09-11 18:16:11,428 enhanced_nutrition_api 11128 17688 Found nutrition data from OpenFoodFacts
+INFO 2025-09-11 18:16:11,429 views 11128 17688 Retrieved nutrition data from: openfoodfacts
+INFO 2025-09-11 18:16:11,469 basehttp 11128 17688 "POST /api/v1/analyze/ HTTP/1.1" 200 901
+INFO 2025-09-11 18:17:39,611 basehttp 11128 29972 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-11 18:17:39,714 basehttp 11128 29972 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4184
+INFO 2025-09-11 18:17:39,899 enhanced_food_detector 11128 14688 Initializing Enhanced Food Detection System...
+INFO 2025-09-11 18:17:39,900 enhanced_food_detector 11128 14688 Loading ResNet50...
+INFO 2025-09-11 18:17:41,023 enhanced_food_detector 11128 14688 Loading EfficientNetB3...
+ERROR 2025-09-11 18:17:42,475 enhanced_food_detector 11128 14688 Error loading models: Shape mismatch in layer #1 (named stem_conv)for weight stem_conv/kernel. Weight expects shape (3, 3, 1, 40). Received saved weight with shape (3, 3, 3, 40)
+INFO 2025-09-11 18:17:43,547 enhanced_food_detector 11128 14688 Fallback: Using only ResNet50
+INFO 2025-09-11 18:17:46,163 views 11128 14688 Detected: Eggnog with confidence: 11.08%
+INFO 2025-09-11 18:17:46,165 enhanced_nutrition_api 11128 14688 Searching comprehensive nutrition data for: Eggnog
+ERROR 2025-09-11 18:17:47,889 enhanced_nutrition_api 11128 14688 USDA API error: 403
+INFO 2025-09-11 18:17:49,527 enhanced_nutrition_api 11128 14688 Found nutrition data from OpenFoodFacts
+INFO 2025-09-11 18:17:49,528 views 11128 14688 Retrieved nutrition data from: openfoodfacts
+INFO 2025-09-11 18:17:49,563 basehttp 11128 14688 "POST /api/v1/analyze/ HTTP/1.1" 200 904
+INFO 2025-09-11 19:47:50,465 autoreload 17980 22152 Watching for file changes with StatReloader
+WARNING 2025-09-11 19:53:23,558 log 17980 31488 Not Found: /
+WARNING 2025-09-11 19:53:23,558 basehttp 17980 31488 "GET / HTTP/1.1" 404 2486
+INFO 2025-09-11 19:53:23,896 basehttp 17980 22348 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-11 19:53:23,945 basehttp 17980 22348 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4184
+INFO 2025-09-11 19:53:24,260 enhanced_food_detector 17980 32368 Initializing Enhanced Food Detection System...
+INFO 2025-09-11 19:53:24,260 enhanced_food_detector 17980 32368 Loading ResNet50...
+INFO 2025-09-11 19:53:25,375 enhanced_food_detector 17980 32368 Loading EfficientNetB3...
+ERROR 2025-09-11 19:53:26,664 enhanced_food_detector 17980 32368 Error loading models: Shape mismatch in layer #1 (named stem_conv)for weight stem_conv/kernel. Weight expects shape (3, 3, 1, 40). Received saved weight with shape (3, 3, 3, 40)
+INFO 2025-09-11 19:53:27,354 enhanced_food_detector 17980 32368 Fallback: Using only ResNet50
+INFO 2025-09-11 19:53:28,985 views 17980 32368 Detected: Head Cabbage with confidence: 10.93%
+INFO 2025-09-11 19:53:28,988 enhanced_nutrition_api 17980 32368 Searching comprehensive nutrition data for: Head Cabbage
+ERROR 2025-09-11 19:53:30,831 enhanced_nutrition_api 17980 32368 USDA API error: 403
+INFO 2025-09-11 19:53:32,464 enhanced_nutrition_api 17980 32368 Found nutrition data from OpenFoodFacts
+INFO 2025-09-11 19:53:32,464 views 17980 32368 Retrieved nutrition data from: openfoodfacts
+INFO 2025-09-11 19:53:32,506 basehttp 17980 32368 "POST /api/v1/analyze/ HTTP/1.1" 200 884
+INFO 2025-09-13 12:58:07,582 autoreload 24212 28848 Watching for file changes with StatReloader

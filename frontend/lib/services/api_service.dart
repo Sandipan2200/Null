@@ -141,12 +141,21 @@ class ApiService {
   debugPrint('📤 Uploading image: ${imageFile.path}');
 
       // Send request with timeout and a single retry on timeout.
+      // Note: a MultipartRequest cannot be sent twice — on retry we must
+      // create a fresh MultipartRequest instance.
       http.StreamedResponse streamedResponse;
       try {
         streamedResponse = await request.send().timeout(_timeout);
       } on TimeoutException {
-        // Retry once
-        streamedResponse = await request.send().timeout(_timeout);
+        // Retry once by building a new request (cannot reuse the old one).
+        final retryRequest = http.MultipartRequest('POST', uri);
+        retryRequest.files.add(
+          await http.MultipartFile.fromPath('image', imageFile.path),
+        );
+        retryRequest.headers.addAll({
+          'Accept': 'application/json',
+        });
+        streamedResponse = await retryRequest.send().timeout(_timeout);
       }
 
       final response = await http.Response.fromStream(streamedResponse);
